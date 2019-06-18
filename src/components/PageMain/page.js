@@ -35,7 +35,7 @@ export default connect(
             dispatch(api.getFilm());
         },
         onAdd: (ref) => {
-            const data = `Title=${ref.titleRef.current.value}&ReleaseYear=${ref.yearsRef.current.value}&Format=${ref.formatRef.current.value}&Stars=${ref.starsRef.current.value}"`;
+            const data = `Title=${ref.titleRef.current.value}&ReleaseYear=${ref.yearsRef.current.value}&Format=${ref.formatRef.current.value}&Stars=${ref.starsRef.current.value}`;
             ref.titleRef.current.value = '';
             ref.yearsRef.current.value = '';
             ref.starsRef.current.value = '';

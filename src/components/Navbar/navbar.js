@@ -23,8 +23,8 @@ class NavBar extends Component {
                     </Nav>
                     <Form inline className="mr-5 ">
                         <InputGroup className="my-3">
-                            <Form.Label className="mr-3">Поиск по:</Form.Label>
-                            <Form.Control as="select" ref={this.ref.selectRef}>
+                            <Form.Label className="ml-3">Поиск по:</Form.Label>
+                            <Form.Control as="select" className="mx-3" ref={this.ref.selectRef}>
                                 <option value="Title">названию</option>
                                 <option value="Stars">актеру</option>
                             </Form.Control>

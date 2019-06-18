@@ -45,12 +45,11 @@ module.exports = function(app, db) {
     });
     /////////////////////////////////CREATE
     app.post('/create',(req,res) =>{
-        console.log("___________");
         console.log(req.body);
         const data = req.body;
-        const arrayStars = data.Stars.split(',');
+        const arrayStars = data.Stars.split(', ');
         const newFilm = [{ Title: data.Title, ReleaseYear: data.ReleaseYear, Format: data.Format, Stars: arrayStars}];
-        db.insertOne(newFilm, (err, result) => {
+        db.insert(newFilm, (err, result) => {
             if (err) {
                 res.send({ 'error': 'An error has occurred' });
             } else {
