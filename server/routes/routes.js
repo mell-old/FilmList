@@ -24,7 +24,11 @@ module.exports = function(app, db) {
     });
     /////////////////////////////////SORT
     app.get('/sort',(req,res)=>{
-        db.find({}).sort({Title: 1, ReleaseYear: 1}).toArray((err, result)  => {
+        db.find({}).sort({Title: 1, ReleaseYear: 1}).collation({
+            locale: "ru",
+                caseLevel: true,
+                    caseFirst: "upper",
+                        strength: 4}).toArray((err, result)  => {
             if (err) {
                 res.send({'error':'An error has occurred'});
             } else {

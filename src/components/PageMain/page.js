@@ -35,12 +35,25 @@ export default connect(
             dispatch(api.getFilm());
         },
         onAdd: (ref) => {
-            const data = `Title=${ref.titleRef.current.value}&ReleaseYear=${ref.yearsRef.current.value}&Format=${ref.formatRef.current.value}&Stars=${ref.starsRef.current.value}`;
-            ref.titleRef.current.value = '';
-            ref.yearsRef.current.value = '';
-            ref.starsRef.current.value = '';
-            console.log(data);
-            dispatch(api.addFilm(data));
+            if(ref.titleRef.current.value === '' || ref.starsRef.current.value === '')
+            {
+                ref.titleRef.current.classList.add("placeholder");
+                ref.starsRef.current.classList.add("placeholder");
+                ref.titleRef.current.placeholder = "Заполните поле!";
+                ref.starsRef.current.placeholder = "Заполните поле!";
+            }
+            else
+            {
+                const data = `Title=${ref.titleRef.current.value}&ReleaseYear=${ref.yearsRef.current.value}&Format=${ref.formatRef.current.value}&Stars=${ref.starsRef.current.value}`;
+                ref.titleRef.current.value = '';
+                ref.starsRef.current.value = '';
+                ref.titleRef.current.classList.remove("placeholder");
+                ref.starsRef.current.classList.remove("placeholder");
+                ref.titleRef.current.placeholder = "Title";
+                ref.starsRef.current.placeholder = "Stars";
+                console.log(data);
+                dispatch(api.addFilm(data));
+            }
         }
     })
 )(Page);

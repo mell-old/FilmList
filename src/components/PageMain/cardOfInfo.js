@@ -17,7 +17,7 @@ class CardOfInfo extends Component{
                         <h6 className="text-center">Список актеров:</h6>
                         <p>{this.props.stars}</p>
                     </Card.Text>
-                    <Button onClick={()=> {this.props.onDelete(this.props.id)}} variant="outline-info">Видалити</Button>
+                    <Button onClick={()=> {this.props.onDelete(this.props.id, this.props.name)}} variant="outline-info">Видалити</Button>
                 </Card.Body>
             </Card>
         );
@@ -29,8 +29,9 @@ export default connect(
         state: state
     }),
     dispatch => ({
-        onDelete: (id) =>
+        onDelete: (id, name) =>
         {
+            alert(`${name} is deleted`);
             dispatch(api.deleteFilm(id));
         }
     })

@@ -14,8 +14,17 @@ class AddFilm extends Component{
             starsRef: React.createRef()
         }
     }
+    optiontsInsert(){
+        let options = [];
+        for(let i = 1850; i <= 2020; i++)
+        {
+            options.push(<option value={i}>{i}</option>);
+        }
+        return options;
+    }
     render() {
         return(
+            <>
             <Form className="row justify-content-center" inline>
                 <Form.Label className="ml-sm-5 mt-4 col-sm-12 col-md-2"><h4>Добавления фильма:</h4></Form.Label>
                 <FormControl
@@ -25,15 +34,12 @@ class AddFilm extends Component{
                     placeholder="Title"
                     aria-label="Title"
                     aria-describedby="basic-addon2"
+                    required={"required"}
                 />
-                <FormControl
-                    ref={this.ref.yearsRef}
-                    className="ml-5 mt-4 col-sm-4 col-md-2"
-                    type="text"
-                    placeholder="Release Year"
-                    aria-label="years"
-                    aria-describedby="basic-addon2"
-                />
+                <Form.Control as="select" ref={this.ref.yearsRef}
+                              className="ml-5 mt-4 col-sm-4 col-md-2">
+                    {this.optiontsInsert()}
+                </Form.Control>
                 <Form.Control as="select" ref={this.ref.formatRef}
                               className="ml-5 mt-4 col-sm-4 col-md-2">
                     <option value="DVD">DVD</option>
@@ -47,11 +53,13 @@ class AddFilm extends Component{
                     placeholder="Stars"
                     aria-label="stars"
                     aria-describedby="basic-addon2"
+                    required={"required"}
                 />
                 <Button className="ml-5 mt-4 col-sm-6 col-md-1" onClick={() => {this.props.onAdd(this.ref)}} variant="outline-info">
                     Добавить
                 </Button>
             </Form>
+                </>
         );
     }
 };

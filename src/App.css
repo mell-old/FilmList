@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -18,7 +19,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.placeholder::-webkit-input-placeholder {color:#c0392b;}
+.placeholder::-moz-placeholder          {color:#c0392b;}/* Firefox 19+ */
+.placeholder:-moz-placeholder           {color:#c0392b;}/* Firefox 18- */
+.placeholder:-ms-input-placeholder      {color:#c0392b;}
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;}
+input:-moz-placeholder      {text-overflow:ellipsis;}
+input:-ms-input-placeholder {text-overflow:ellipsis;}
+.placeholder:focus::-webkit-input-placeholder {color: transparent}
+.placeholder:focus::-moz-placeholder          {color: transparent}
+.placeholder:focus:-moz-placeholder           {color: transparent}
+.placeholder:focus:-ms-input-placeholder      {color: transparent}
 .App-link {
   color: #61dafb;
 }

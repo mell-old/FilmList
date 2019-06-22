@@ -84,7 +84,13 @@ export default connect(
         },
         onDownloadFile: (ref) => {
             const file = ref.current.files[0];
-            dispatch(api.addWithFile(file));
+            if(file.type === "text/plain")
+                dispatch(api.addWithFile(file));
+            else
+            {
+                alert("File is not *.txt. Change file into .txt format!");
+            }
+
         }
     })
 )(NavBar);
