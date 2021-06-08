@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/server/routes/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageMain/AddFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageMain/AddFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageMain/AddArticle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageMain/AddArticle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageMain/cardOfInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageMain/cardOfInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PageMain/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageMain/page.js" afterDir="false" />
     </list>
@@ -64,7 +64,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PageMain/createCinema.js">
+        <entry file="file://$PROJECT_DIR$/src/components/PageMain/createArticle.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -96,7 +96,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/filmAPI.js">
+        <entry file="file://$PROJECT_DIR$/src/actions/articleAPI.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
               <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
@@ -105,7 +105,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/PageMain/AddFilm.js">
+        <entry file="file://$PROJECT_DIR$/src/components/PageMain/AddArticle.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-593">
               <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
@@ -153,17 +153,17 @@
         <option value="$PROJECT_DIR$/server/routes/request/Delete.js" />
         <option value="$PROJECT_DIR$/sample_movies.txt" />
         <option value="$PROJECT_DIR$/server/routes/sample_movies.txt" />
-        <option value="$PROJECT_DIR$/src/components/PageMain/createCinema.js" />
-        <option value="$PROJECT_DIR$/src/actions/addFilm.js" />
-        <option value="$PROJECT_DIR$/src/actions/getFilm.js" />
-        <option value="$PROJECT_DIR$/src/actions/addFilmsWithFile.js" />
-        <option value="$PROJECT_DIR$/src/actions/deleteFilm.js" />
-        <option value="$PROJECT_DIR$/src/actions/sortFilm.js" />
-        <option value="$PROJECT_DIR$/src/actions/findFilm.js" />
+        <option value="$PROJECT_DIR$/src/components/PageMain/createArticle.js" />
+        <option value="$PROJECT_DIR$/src/actions/addArticle.js" />
+        <option value="$PROJECT_DIR$/src/actions/getArticle.js" />
+        <option value="$PROJECT_DIR$/src/actions/addArticlesWithFile.js" />
+        <option value="$PROJECT_DIR$/src/actions/deleteArticle.js" />
+        <option value="$PROJECT_DIR$/src/actions/sortArticle.js" />
+        <option value="$PROJECT_DIR$/src/actions/findArticle.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/actions/controler.js" />
-        <option value="$PROJECT_DIR$/src/actions/filmAPI.js" />
+        <option value="$PROJECT_DIR$/src/actions/articleAPI.js" />
         <option value="$PROJECT_DIR$/server/routes/fileRead.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -174,7 +174,7 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/PageMain/page.js" />
         <option value="$PROJECT_DIR$/server/routes/routes.js" />
-        <option value="$PROJECT_DIR$/src/components/PageMain/AddFilm.js" />
+        <option value="$PROJECT_DIR$/src/components/PageMain/AddArticle.js" />
         <option value="$PROJECT_DIR$/src/components/Navbar/navbar.js" />
       </list>
     </option>
@@ -196,42 +196,42 @@
         <subPane>
           <expand>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="actions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Navbar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="PageMain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="FilmList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ArticleList" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
@@ -282,7 +282,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Mocha.src\App.test.js">
-    <configuration name="/GET films.it should GET all the film" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="/GET articles.it should GET all the article" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -291,15 +291,15 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/App.test.js" />
       <test-names>
-        <test-name value="/GET films" />
-        <test-name value="it should GET all the film" />
+        <test-name value="/GET articles" />
+        <test-name value="it should GET all the article" />
       </test-names>
       <method v="2" />
     </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
-    <configuration name="filmAPI.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="filmAPI.js" working-dir="$PROJECT_DIR$/src/actions">
+    <configuration name="articleAPI.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="articleAPI.js" working-dir="$PROJECT_DIR$/src/actions">
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -349,8 +349,8 @@
         <item itemvalue="npm.test" />
         <item itemvalue="Mocha.src\App.test.js" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="Jest./GET films.it should GET all the film" />
-        <item itemvalue="Node.js.filmAPI.js" />
+        <item itemvalue="Jest./GET articles.it should GET all the article" />
+        <item itemvalue="Node.js.articleAPI.js" />
       </list>
     </recent_temporary>
   </component>
@@ -499,12 +499,12 @@
     <entry file="file://$PROJECT_DIR$/server/routes/request/Insert.js" />
     <entry file="file://$PROJECT_DIR$/server/routes/request/Delete.js" />
     <entry file="file://$PROJECT_DIR$/src/components/PageMain/cardConteiner.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/addFilm.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/getFilm.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/addFilmsWithFile.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/deleteFilm.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/sortFilm.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/findFilm.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/addArticle.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/getArticle.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/addArticlesWithFile.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/deleteArticle.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/sortArticle.js" />
+    <entry file="file://$PROJECT_DIR$/src/actions/findArticle.js" />
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-368">
@@ -620,7 +620,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PageMain/createCinema.js">
+    <entry file="file://$PROJECT_DIR$/src/components/PageMain/createArticle.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
@@ -630,7 +630,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/filmAPI.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/articleAPI.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
@@ -651,7 +651,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/PageMain/AddFilm.js">
+    <entry file="file://$PROJECT_DIR$/src/components/PageMain/AddArticle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-593">
           <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />

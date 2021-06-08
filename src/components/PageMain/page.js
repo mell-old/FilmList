@@ -1,9 +1,7 @@
 import React, {Component} from "react";
-import {Button} from "react-bootstrap";
-import CardOfInfo from "./cardOfInfo";
-import api from './../../actions/filmAPI.js'
+import api from './../../actions/articleAPI.js'
 import {connect} from "react-redux";
-import AddFilm from "./AddFilm";
+import AddArticle from "./AddArticle";
 
 class Page extends Component
 {
@@ -11,12 +9,11 @@ class Page extends Component
         this.props.onGet();
     }
     render(){
-        const components = this.props.film;
-        console.log(components);
+        const components = this.props.article;
         return(
             <div id="page">
                 <div className="row justify-content-center">
-                    <AddFilm onAdd={this.props.onAdd} className="col-12"/>
+                    <AddArticle onAdd={this.props.onAdd} className="col-12"/>
                 </div>
                 <div className="row justify-content-center">
                     {components}
@@ -28,11 +25,11 @@ class Page extends Component
 
 export default connect(
     state => ({
-        film: state.data
+        article: state.data
     }),
     dispatch => ({
         onGet: () => {
-            dispatch(api.getFilm());
+            dispatch(api.getArticle());
         },
         onAdd: (ref) => {
             if(ref.titleRef.current.value === '' || ref.starsRef.current.value === '')
@@ -52,7 +49,7 @@ export default connect(
                 ref.titleRef.current.placeholder = "Title";
                 ref.starsRef.current.placeholder = "Stars";
                 console.log(data);
-                dispatch(api.addFilm(data));
+                dispatch(api.addArticle(data));
             }
         }
     })

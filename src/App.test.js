@@ -7,7 +7,7 @@ chai.use(chaiHttp);
 let data;
 describe('REST API', () => {
     describe('/GET', () => {
-        it('get list films', function (done) {
+        it('get list articles', function (done) {
             chai.request('http://localhost:3001')
                 .get('/get')
                 .end(function (err, res) {
@@ -16,7 +16,7 @@ describe('REST API', () => {
                     done();
                 });
         });
-        it('get sort asc films', function (done) {
+        it('get sort asc articles', function (done) {
             chai.request('http://localhost:3001')
                 .get('/sort')
                 .end(function (err, res) {
@@ -27,7 +27,7 @@ describe('REST API', () => {
         });
     });
     describe('/POST', () => {
-        it('create new film', function (done) {
+        it('create new article', function (done) {
             chai.request('http://localhost:3001')
                 .post('/create').send(`Title="TEST1234"&ReleaseYears=1897&Format=DVD&Stars="TEST12345"`)
                 .end(function (err, res) {
@@ -37,7 +37,7 @@ describe('REST API', () => {
                     done();
                 });
         });
-        it('find past film (name)', function (done) {
+        it('find past article (name)', function (done) {
             chai.request('http://localhost:3001')
                 .post('/find').send(`Title=${data.Title}`)
                 .end(function (err, res) {
@@ -48,7 +48,7 @@ describe('REST API', () => {
                     done();
                 });
         });
-        it('find past film (stars)', function (done) {
+        it('find past article (stars)', function (done) {
             chai.request('http://localhost:3001')
                 .post('/find').send(`Stars=${data.Stars}`)
                 .end(function (err, res) {
@@ -62,7 +62,7 @@ describe('REST API', () => {
         });
     });
     describe('/DELETE', () => {
-        it('delete past create film', function (done) {
+        it('delete past create article', function (done) {
             chai.request('http://localhost:3001')
                 .delete('/delete/' + data._id)
                 .end(function (err, res) {

@@ -1,4 +1,4 @@
-const cinemaRoutes = require('./routes');
+const articleRoutes = require('./routes');
 module.exports = function(app, db) {
-    cinemaRoutes(app, db);
+    articleRoutes(app, db);
 };

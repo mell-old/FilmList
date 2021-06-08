@@ -52,8 +52,8 @@ module.exports = function(app, db) {
         console.log(req.body);
         const data = req.body;
         const arrayStars = data.Stars.split(', ');
-        const newFilm = [{ Title: data.Title, ReleaseYear: data.ReleaseYear, Format: data.Format, Stars: arrayStars}];
-        db.insert(newFilm, (err, result) => {
+        const newArticle = [{ Title: data.Title, ReleaseYear: data.ReleaseYear, Format: data.Format, Stars: arrayStars }];
+        db.insert(newArticle, (err, result) => {
             if (err) {
                 res.send({ 'error': 'An error has occurred' });
             } else {

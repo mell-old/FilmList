@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to TestTask_Node.JS_server_for_CinemaList 👋</h1>
+<h1 align="center">Welcome to TestTask_Node.JS_server_for_ArticleList 👋</h1>
 <p>
   <img src="https://img.shields.io/badge/version-0.7-blue.svg?cacheSeconds=2592000" />
 </p>
@@ -25,7 +25,7 @@
 * App.js - основная компонента SWA приложения
 * components/ - директива с компонентами приложения
 * actions - директива с action для обмена обращения UI к BLL
-* filmAPI - модуль, экспортирующий класс, с actions для связи с сервером
+* articleAPI - модуль, экспортирующий класс, с actions для связи с сервером
 * ../reducers - директива к которой лежит reducer Redux, который изменяет состояния store в зависимости от action
 ```sh
 Примечание. В приложении, для доступа к значением <input/> используются ссылки! Тоесть приложение имеет не связанный с store данные. 
@@ -40,7 +40,7 @@
 ## REST API
 ```sh
 
-## Получение списка всех фильмов из базы данных: 
+## Получение списка всех ов из базы данных: 
 {url:"http://localhost:3001/get", method:"GET", Content-Type: "application/json"}
 
 ## Сортировка списка по алфавиту: url:"http://localhost:3001/sort" method:"GET"
@@ -79,6 +79,6 @@ npm test
 
 👤 **OlehMell**
 
-* Github: [@mell-old/FilmCatalog](https://github.com/mell-old/FilmCatalog)  
+* Github: [@mell-old/ArticleCatalog](https://github.com/mell-old/ArticleCatalog)  
 
 

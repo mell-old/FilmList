@@ -7,7 +7,7 @@ const client = new MongoClient(db.uri, { useNewUrlParser: true });
 const cors = require('cors');
 client.connect((err) => {
     if (err) return console.log(err);
-    const collection = client.db("CinemaList").collection("FilmList");
+    const collection = client.db("ArticleDB").collection("ArticleList");
     const route = require('./routes/index');
     app.use(cors());
     app.use(bodyParser.urlencoded({extended: true}));

@@ -8,7 +8,7 @@ export const reducer = (state = {}, action) => {
         case 'GET':
             elements = action.data.data;
             components = elements.map((currentValue) =>{
-                return  <CardOfInfo id={currentValue._id} name={currentValue.Title} year={currentValue.ReleaseYear} format={currentValue.Format} stars={currentValue.Stars}/>
+                return  <CardOfInfo key={currentValue._id} id={currentValue._id} name={currentValue.Title} year={currentValue.ReleaseYear} format={currentValue.Format} stars={currentValue.Stars}/>
             });
             return {data: components};
         case 'ADD':
@@ -26,18 +26,18 @@ export const reducer = (state = {}, action) => {
         case "FIND":
             elements = action.data.data;
             components = elements.map((currentValue) =>{
-                return  <CardOfInfo id={currentValue._id} name={currentValue.Title} year={currentValue.ReleaseYear} format={currentValue.Format} stars={currentValue.Stars}/>
+                return  <CardOfInfo key={currentValue._id} id={currentValue._id} name={currentValue.Title} year={currentValue.ReleaseYear} format={currentValue.Format} stars={currentValue.Stars}/>
             });
             return {data: components};
         case "SORT":
             elements = action.data.data;
             components = elements.map((currentValue) =>{
-                return  <CardOfInfo id={currentValue._id} name={currentValue.Title} year={currentValue.ReleaseYear} format={currentValue.Format} stars={currentValue.Stars}/>
+                return  <CardOfInfo key={currentValue._id} id={currentValue._id} name={currentValue.Title} year={currentValue.ReleaseYear} format={currentValue.Format} stars={currentValue.Stars}/>
             });
             return {data: components};
         case "DELETE":
             elements = state.data;
-            components = elements.filter(el => el.props.id != action.id);
+            components = elements.filter(el => el.props.id !== action.id);
             return {data: components};
         case "CONTROL":
             return {action: action.action};
